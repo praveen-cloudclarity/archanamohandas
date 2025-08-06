@@ -91,7 +91,4 @@ h2 + p, h3 + p {
     margin-top: 5px;
 }
 
-/* LaTeX-style paragraph indentation (optional) */
-section p:not(:first-of-type) {
-    text-indent: 1.5em;
-}
+/* No paragraph indentation - all text left-aligned */
