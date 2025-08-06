@@ -1,94 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Crimson+Text:ital@0;1&display=swap');
+
 body {
-    font-family: "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", Times, serif;
-    line-height: 1.5;
-    color: #000;
-    background: #fff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
     margin: 0;
     padding: 40px 20px;
-    font-size: 12pt;
+    font-size: 15px;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 h1 {
-    font-size: 17pt;
-    font-weight: bold;
-    margin: 0 0 10px 0;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #000;
     text-align: center;
 }
 
 h2 {
-    font-size: 14pt;
-    font-weight: bold;
-    margin: 25px 0 10px 0;
-    border-bottom: 0.5pt solid #000;
-    padding-bottom: 3px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 35px 0 15px 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
 }
 
 h3 {
-    font-size: 12pt;
-    font-weight: bold;
-    margin: 15px 0 5px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+    color: #2a2a2a;
 }
 
 p {
-    margin: 10px 0;
-    text-align: justify;
+    margin: 12px 0;
+    color: #3a3a3a;
+    line-height: 1.7;
 }
 
 a {
-    color: #00008B;
+    color: #0066cc;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 a:hover {
+    color: #0052a3;
     text-decoration: underline;
 }
 
 header {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
 }
 
 header p {
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+header p a {
+    color: #333;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+header p a:hover {
+    color: #0066cc;
+    text-decoration: none;
 }
 
 ul, ol {
-    margin: 10px 0;
+    margin: 12px 0;
     padding-left: 25px;
+    color: #3a3a3a;
 }
 
 li {
-    margin: 5px 0;
+    margin: 8px 0;
+    line-height: 1.6;
 }
 
 section {
-    margin-bottom: 25px;
-}
-
-.nav-links {
-    margin: 20px 0;
-    padding: 10px 0;
-    border-top: 0.5pt solid #000;
-    border-bottom: 0.5pt solid #000;
+    margin-bottom: 35px;
 }
 
 .date {
     font-style: italic;
-    color: #333;
+    color: #666;
+    font-size: 14px;
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
-/* LaTeX-style spacing */
-h2 + p, h3 + p {
-    margin-top: 5px;
+em {
+    font-style: italic;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 16px;
 }
 
-/* No paragraph indentation - all text left-aligned */
+/* Special styling for research items */
+section h3 {
+    color: #000;
+}
+
+/* Navigation links */
+.nav-links {
+    margin: 20px 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+/* Better list spacing */
+section ul li, section ol li {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+}
